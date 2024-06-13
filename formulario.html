@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Nova História</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4 text-center">Cadastrar Nova História</h1>
+        
+        <form>
+            <div class="form-group">
+                <label for="title">Título*</label>
+                <input type="text" class="form-control" id="title" placeholder="Digite o título da história" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="synopsis">Sinopse</label>
+                <textarea class="form-control" id="synopsis" rows="3" placeholder="Digite uma breve sinopse"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="thumbnail">Miniatura</label>
+                <input type="file" class="form-control-file" id="thumbnail">
+                <small id="thumbnailHelp" class="form-text text-muted">Selecione uma imagem pequena para representar a história.</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="image">Imagem Principal*</label>
+                <input type="file" class="form-control-file" id="image" required>
+                <small id="imageHelp" class="form-text text-muted">Selecione uma imagem de destaque para a história.</small>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="publish-date">Data de Publicação*</label>
+                    <input type="date" class="form-control" id="publish-date" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="expire-date">Data de Expiração*</label>
+                    <input type="date" class="form-control" id="expire-date" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="story">História*</label>
+                <textarea class="form-control" id="story" rows="10" placeholder="Digite a história detalhadamente" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary">Publicar</button>
+        </form>
+        
+        <a href="home.html" class="btn btn-secondary mt-3">Voltar</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
